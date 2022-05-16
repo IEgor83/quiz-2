@@ -1,7 +1,6 @@
 '''
+# TASK 1
 import requests
-
-website = "https://jsonplaceholder.typicode.com/"
 
 def username(username):
     response = requests.get("https://jsonplaceholder.typicode.com/users", params={'username': username})
@@ -22,6 +21,7 @@ for i in post(username(name)):
 '''
 
 '''
+# TASK 2
 def create_topic(topic_name):
     return {'topic_name':topic_name, 'users_id':[], 'posts':[]}
 
